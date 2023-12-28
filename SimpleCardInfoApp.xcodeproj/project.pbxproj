@@ -60,8 +60,8 @@
 				5E7572BE2B3C21D700681E8F /* SceneDelegate.swift */,
 				5E7572C02B3C21D700681E8F /* ViewController.swift */,
 				5E7572C22B3C21D700681E8F /* Main.storyboard */,
-				5E7572C52B3C21D900681E8F /* Assets.xcassets */,
 				5E7572C72B3C21D900681E8F /* LaunchScreen.storyboard */,
+				5E7572C52B3C21D900681E8F /* Assets.xcassets */,
 				5E7572CA2B3C21D900681E8F /* Info.plist */,
 			);
 			path = SimpleCardInfoApp;
