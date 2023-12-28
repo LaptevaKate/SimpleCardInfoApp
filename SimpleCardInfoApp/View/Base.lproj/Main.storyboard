@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G6b-x8-ZGM">
+            <objects>
+                <navigationController id="vJ6-68-sFJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="devIcon" selectedImage="devIcon" id="yd2-Ws-nqk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TOj-En-53R">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kaR-dV-nvn" kind="relationship" relationship="rootViewController" id="yWm-s0-xG3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIT-pI-i42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="762"/>
+        </scene>
+        <!--Developer Info View Controller-->
+        <scene sceneID="PX1-3I-TMW">
+            <objects>
+                <viewController id="kaR-dV-nvn" customClass="DeveloperInfoViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mYi-TM-VeV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jMS-PF-SE0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VeJ-os-0TR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8o-ei-mAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="1475"/>
+        </scene>
+        <!--Developer Detail View Controller-->
+        <scene sceneID="fNd-BX-lwv">
+            <objects>
+                <viewController id="1gp-tS-qrS" customClass="DeveloperDetailViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBH-ai-fDL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nF4-fD-8Q5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcQ-Cf-6Oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="1475"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UPZ-Dq-vmJ">
+            <objects>
+                <navigationController id="Jga-sf-dmE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="swiftIcon" selectedImage="swiftIcon" id="uMT-G0-OLY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6k-7a-Kkk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ifl-aI-ibb" kind="relationship" relationship="rootViewController" id="KQ2-tZ-So7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2I-T8-r8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="762"/>
+        </scene>
+        <!--Swift Info View Controller-->
+        <scene sceneID="9Lg-C2-Y7y">
+            <objects>
+                <viewController id="ifl-aI-ibb" customClass="SwiftInfoViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Wz-lE-XPc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sne-eD-TSu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qXw-2Q-FFY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Tf-WF-TIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-112" y="1494"/>
+        </scene>
+        <!--Swift Detail View Controller-->
+        <scene sceneID="JW6-iT-uKc">
+            <objects>
+                <viewController id="WYF-4p-RV6" customClass="SwiftDetailViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xL8-T7-k3b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x3r-Pq-um8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v15-x8-DF3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="1494"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="f6k-dU-qtK">
+            <objects>
+                <tabBarController id="3h2-aT-gf0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CKh-N6-zFr"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="4ay-t7-6Y5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lnx-d7-8WG" kind="relationship" relationship="viewControllers" id="0BH-sQ-egF"/>
+                        <segue destination="Jga-sf-dmE" kind="relationship" relationship="viewControllers" id="8Jn-Xf-tpU"/>
+                        <segue destination="vJ6-68-sFJ" kind="relationship" relationship="viewControllers" id="1Ub-jY-kuE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="px5-Jo-5yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="-2"/>
+        </scene>
+        <!--Log Out View Controller-->
+        <scene sceneID="ZvE-PQ-oxq">
+            <objects>
+                <viewController id="Lnx-d7-8WG" customClass="LogOutViewController" customModule="SimpleCardInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2fs-e4-Vjv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SDJ-IB-MbH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="turnoffIcon" selectedImage="turnoffIcon" id="LBz-id-P0p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVe-BX-6kF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="devIcon" width="32" height="32"/>
+        <image name="swiftIcon" width="32" height="32"/>
+        <image name="turnoffIcon" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
