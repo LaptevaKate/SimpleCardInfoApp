@@ -9,7 +9,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     private let textLabel: UILabel = {
         let textLabel = UILabel()
         textLabel.text  = "Let's take some Info about Swift \n and Developers"
@@ -49,13 +49,14 @@ final class MainViewController: UIViewController {
         return stackView
     }()
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        navigateToSecondScreen()
         
     }
-    //MARK: - private methods
+    // MARK: - private methods
     private func setUpStackView() {
         stackView.addArrangedSubview(textLabel)
         stackView.addArrangedSubview(imageView)
@@ -72,8 +73,13 @@ final class MainViewController: UIViewController {
         setUpStackView()
         constraintsSetupForStackView()
     }
+    private func navigateToSecondScreen() {
+        nextScreenButton.addTarget(self, action: #selector(nextScreenButtonAction), for: .touchUpInside)
+    }
     
-    
-    
+    @objc func nextScreenButtonAction() {
+        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "DistributedVC") as! DistributedViewController
+        navigationController?.pushViewController(destinationVC, animated: true)
+    }
 }
 
