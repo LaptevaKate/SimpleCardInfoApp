@@ -39,7 +39,6 @@ final class DistributedViewController: UIViewController {
     }
     
     private func setUpButtons() {
-        
         swiftButton.setTitle("Move To Detail Swift Screen", for: .normal)
         swiftButton.setTitleColor(.black, for:
                 .normal)

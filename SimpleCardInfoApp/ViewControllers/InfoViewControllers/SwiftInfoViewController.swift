@@ -32,9 +32,8 @@ final class SwiftInfoViewController: UIViewController {
         labelTapped()
     }
     
-    
     //MARK: -  private Methods
-   private func initTitleLabel(title: UILabel) {
+    private func initTitleLabel(title: UILabel) {
         title.textAlignment = .center
         title.layer.cornerRadius = 5
         title.layer.masksToBounds = true
@@ -51,19 +50,14 @@ final class SwiftInfoViewController: UIViewController {
         let myString = NSMutableAttributedString(string: "DO YOU KNOW SWIFT", attributes: myAttribute)
         let myRange = NSRange(location: 12, length: 5)
         myString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: myRange)
-    
+        
         title.attributedText = myString
     }
-
     
     private func initInformLabel() {
         swiftInformLabel.layer.cornerRadius = 50
         swiftInformLabel.layer.masksToBounds = true
-        swiftInformLabel.font = UIFont(name: "Helvetica-Oblique", size: 16)
-        let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.darkText ]
-        let myAttrString = NSAttributedString(string: "TAP LABEL\n to see the details", attributes: myAttribute)
-        swiftInformLabel.attributedText = myAttrString
-  
+        swiftInformLabel.font = UIFont(name: "Helvetica-Oblique", size: 15)
     }
     
     private func labelTapped() {
@@ -76,7 +70,6 @@ final class SwiftInfoViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGeasture))
         swiftInformLabel.addGestureRecognizer(tapGesture)
     }
-    
     
     @objc func tapGeasture() {
         let randomIndex = Int(arc4random_uniform(UInt32(informationArray.count)))

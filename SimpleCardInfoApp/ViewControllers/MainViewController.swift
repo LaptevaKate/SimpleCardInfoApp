@@ -36,6 +36,8 @@ final class MainViewController: UIViewController {
         button.setTitleColor(.systemPurple, for: .normal)
         button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.widthAnchor.constraint(equalToConstant: 200).isActive = true
         return button
     }()
     

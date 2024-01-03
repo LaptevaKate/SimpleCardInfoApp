@@ -18,19 +18,19 @@ final class DeveloperInfoViewController: UIViewController {
         "Business applications are the second most popular category in the Apple app store. Most businesses rely on applications to handle things like inventory management, billing, or customer relationship management. iOS developers may be employed by companies like Amazon or Etsy to work on applications that support essential business functions."
     ]
     
-    //MARK: - @IBOutlet
-    
+    //MARK: - @IBOutlets
     @IBOutlet weak var developerTitleLabel: UILabel!
     @IBOutlet weak var developerInfoLabel: UILabel!
     
-
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initTitleLabel(title: developerTitleLabel)
         initInformLabel()
-
+        
     }
     
+    //MARK: -  private Methods
     private func initTitleLabel(title: UILabel) {
         title.textAlignment = .center
         title.layer.cornerRadius = 5
@@ -42,9 +42,7 @@ final class DeveloperInfoViewController: UIViewController {
     private func initInformLabel() {
         developerInfoLabel.layer.cornerRadius = 50
         developerInfoLabel.layer.masksToBounds = true
-        developerInfoLabel.attributedText = NSAttributedString(string: "IOS DEV ARE POWER")
         developerInfoLabel.font = UIFont(name: "Helvetica-Oblique", size: 15)
-   
+        developerInfoLabel.text = informationArray.joined(separator: " \n 🍏 \n")
     }
-    
 }
